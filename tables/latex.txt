@@ -75,6 +75,12 @@ SINGLE_WILDCARD_CHAR = ?
 ### Multi wildcard char (leave empty if you don’t want a wildcard character).
 MULTI_WILDCARD_CHAR = *
 
+AUTO_SELECT = TRUE
+
+AUTO_COMMIT = TRUE
+
+AUTO_SPLIT = TRUE
+
 ### Whether user are allow to define phrase, default is true
 ### You have to define the word construction rules below.
 ### For input methods which do not input phrases, set this to False
@@ -162,6 +168,7 @@ BEGIN_TABLE
 ###
 ### Subscript - superscript
 ###
+__	_	0
 _1	₁	0
 _2	₂	0
 _3	₃	0
@@ -181,6 +188,7 @@ _a	ₐ	0
 _e	ₑ	0
 _o	ₒ	0
 _x	ₓ	0
+^^	^	0
 ^0	⁰	0
 ^i	ⁱ	0
 ^1	¹	0
@@ -253,6 +261,7 @@ _x	ₓ	0
 \leftarrow	←	0
 \uparrow	↑	0
 \rightarrow	→	0
+\to	→	0
 \downarrow	↓	0
 \leftrightarrow	↔	0
 \updownarrow	↕	0
